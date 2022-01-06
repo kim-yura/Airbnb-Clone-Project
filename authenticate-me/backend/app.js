@@ -1,7 +1,9 @@
+// -------------------- IMPORTS -------------------- //
+
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-const csurf = require('csruf');
+const csurf = require('csurf');
 const helmet = require('helmet');
 const cookieParser = require('cookie-parser');
 
@@ -9,6 +11,10 @@ const {environment} = require('./config');
 const isProduction = environment === 'production';
 
 const app = express();
+
+const routes = require('./routes');
+
+// -------------------- app.use -------------------- //
 
 app.use(morgan('dev'));
 app.use(cookieParser());
@@ -34,3 +40,13 @@ app.use(
         },
     })
 );
+
+app.use(routes);
+
+// -------------------- LOREM IPSUM -------------------- //
+
+
+
+// -------------------- EXPORTS -------------------- //
+
+module.exports = app;
