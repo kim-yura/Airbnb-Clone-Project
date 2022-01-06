@@ -1,0 +1,32 @@
+#root {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding: 50px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+form > * {
+    text-align: center;
+    padding: 5px;
+}
+
+.errors {
+    list-style: none;
+    color: red;
+    width: 300px;
+    font-size: 12px;
+}
