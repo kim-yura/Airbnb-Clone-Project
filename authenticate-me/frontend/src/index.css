@@ -1,1 +1,13 @@
 /* TODO Add site wide styles */
+
+.site-background {
+    background: linear-gradient(0deg, white, rgb(241, 241, 241));
+    margin-top: -5px;
+    width: 100%;
+}
+
+.site-body {
+    padding-top: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}

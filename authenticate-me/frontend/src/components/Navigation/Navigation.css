@@ -1,0 +1,31 @@
+.navbar-top {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.navbar-right {
+    margin-right: 50px;
+    display: flex;
+    text-decoration: none;
+}
+
+.navbar-right > button {
+    color: black;
+    border: none;
+    background-color: white;
+    font-size: 16px;
+};
+
+
+.navlinks {
+    text-decoration: none;
+}
