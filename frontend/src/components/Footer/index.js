@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return (
         <div className="footer-container">
-            <li className="footer-row">
+            <div className="footer-row">
                 <li>React</li>
                 <li>Redux</li>
                 <li>JavaScript</li>
@@ -15,9 +15,9 @@ function Footer() {
                 <li>CSS</li>
                 <li>JSON API</li>
                 <li>Git</li>
-            </li>
+            </div>
             <div className="divider" />
-            <li className="footer-dev">
+            <div className="footer-dev">
                 <li>©2022 SpareBnB</li>
                 <li>Yu Ra Kim</li>
                 <a href="https://github.com/kim-yura" target="_blank">
@@ -26,7 +26,7 @@ function Footer() {
                 <a href="https://www.linkedin.com/in/yura-kim/" target="_blank">
                     <i className="fab fa-linkedin"></i>
                 </a>
-            </li>
+            </div>
         </div>
     )
 };

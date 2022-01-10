@@ -4,7 +4,7 @@ import './SplashImage.css';
 function SplashImage() {
     return (
         <div className="splash-container">
-            <ul class="splash-images">
+            <ul className="splash-images">
                 <li>
                     <div id="splash-01">Image 01</div>
                 </li>
@@ -21,7 +21,7 @@ function SplashImage() {
                     <div id="splash-05">Image 05</div>
                 </li>
             </ul>
-            <div class="splash-text">
+            <div className="splash-text">
                 Travel more, with less.
             </div>
         </div>
