@@ -28,7 +28,7 @@ function Navigation({ isLoaded }) {
     <ul className="navbar-top">
       <li className="navbar-left">
         <NavLink exact to="/">
-          <img src="../../logo_rectangle.png" />
+          <img src="../../logo_rectangle.png" alt="SpareBnB logo"/>
         </NavLink>
       </li>
       <li className="navbar-right">

@@ -18,7 +18,7 @@ function Footer() {
             </li>
             <div className="divider" />
             <li className="footer-dev">
-                <li>©2022 ShareBnb</li>
+                <li>©2022 SpareBnB</li>
                 <li>Yu Ra Kim</li>
                 <a href="https://github.com/kim-yura" target="_blank">
                     <i className="fab fa-github"></i>
