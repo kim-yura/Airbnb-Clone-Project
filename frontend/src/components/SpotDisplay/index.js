@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useState } from 'react';
 
 import { loadAllSpots } from '../../store/spotReducer';
 
@@ -20,13 +19,19 @@ function SpotDisplay() {
     }, [dispatch]);
 
     const allSpotsArr = Object.values(allSpots);
+    const firstThreeSpots = allSpotsArr.slice(0, 3);
 
     return (
         <div className="spot-display-container">
             <h2>Find your next destination</h2>
-            {allSpotsArr.map(spot => (
-                <p>{spot.id}</p>
-            ))}
+            <ul className="tile-grid">
+                {firstThreeSpots.map(spot => (
+                    <li className="spot-tile" key={spot.id}>
+                        <img className="tile-image" src={spot.Images[0].url} alt="First available image of Spot"></img>
+                        <h3>{spot.name}</h3>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

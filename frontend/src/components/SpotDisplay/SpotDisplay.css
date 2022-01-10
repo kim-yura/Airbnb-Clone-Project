@@ -3,9 +3,35 @@
     top: 550px;
     margin-left: 8%;
     margin-right: 8%;
-}
-
-h2 {
     font-family: 'Montserrat', sans-serif;
     color: #282828;
+};
+
+.spot-display-container > h2 {
+    color: #282828;
+};
+
+.tile-grid {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.spot-tile {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+};
+
+.tile-image {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    overflow: fill;
+};
+
+h3 {
+    font-size: 16px;
 }
