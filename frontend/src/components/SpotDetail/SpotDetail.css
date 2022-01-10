@@ -1,0 +1,47 @@
+.detail-container {
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-top: 30px;
+    display: flex;
+}
+
+.detail-image {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.detail-text {
+    margin-left: 50px;
+}
+
+.detail-map > a{
+    text-decoration: underline;
+    color: #FF5A5F;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #282828;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+}
+
+.detail-reviews {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.detail-review {
+    font-size: 14px;
+    font-weight: 600
+}

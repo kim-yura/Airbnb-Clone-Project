@@ -5,11 +5,11 @@
     margin-right: 8%;
     font-family: 'Montserrat', sans-serif;
     color: #282828;
-};
+}
 
 .spot-display-container > h2 {
     color: #282828;
-};
+}
 
 .tile-grid {
     display: flex;
@@ -23,14 +23,14 @@
     width: 200px;
     height: 200px;
     overflow: hidden;
-};
+}
 
 .tile-image {
     background-color: red;
     height: 200px;
     width: 200px;
     overflow: fill;
-};
+}
 
 h3 {
     font-size: 16px;
