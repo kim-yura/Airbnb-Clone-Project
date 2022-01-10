@@ -5,7 +5,7 @@
     background: linear-gradient(0, white, rgb(241, 241, 241));
     margin-top: -5px;
     margin-bottom: -50px;
-    position: absolute;
+    position: relative;
     width: 100%;
     left: 0;
     top: 700px;

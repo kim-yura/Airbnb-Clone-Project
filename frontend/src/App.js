@@ -7,6 +7,8 @@ import SignupForm from "./components/SignupFormModal/SignupForm";
 import Navigation from "./components/Navigation";
 import SplashImage from './components/SplashImage';
 import Footer from "./components/Footer";
+import SpotDisplay from "./components/SpotDisplay";
+
 import './index.css';
 
 function App() {
@@ -24,13 +26,14 @@ function App() {
           <Route path="/signup">
             <SignupForm />
           </Route>
-          <Route path exact="/">
+          <Route exact path="/">
             <div className="site-background">
               <div className="site-body">
                 <SplashImage />
               </div>
               <Footer />
             </div>
+            <SpotDisplay />
           </Route>
         </Switch>
       )}

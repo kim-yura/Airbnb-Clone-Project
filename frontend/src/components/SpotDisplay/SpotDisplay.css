@@ -1,0 +1,11 @@
+.spot-display-container {
+    position: relative;
+    top: 550px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+}
