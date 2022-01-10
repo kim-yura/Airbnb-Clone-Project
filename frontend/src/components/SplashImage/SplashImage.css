@@ -58,28 +58,28 @@
 }
 
 #splash-01 {
-    background-image: url("https://res.cloudinary.com/dy2azwmd6/image/upload/v1641823338/travel_01.jpg");
-    animation-delay: 0s;
+    background-image: url("../../../public/images/travel_01.jpg");
+    animation-delay: -1s;
 }
 
 #splash-02 {
-    background-image: url("https://res.cloudinary.com/dy2azwmd6/image/upload/v1641823338/travel_02.jpg");
-    animation-delay: 3s;
+    background-image: url("../../../public/images/travel_02.jpg");
+    animation-delay: 2s;
 }
 
 #splash-03 {
-    background-image: url("https://res.cloudinary.com/dy2azwmd6/image/upload/v1641823339/travel_03.jpg");
-    animation-delay: 6s;
+    background-image: url("../../../public/images/travel_03.jpg");
+    animation-delay: 5s;
 }
 
 #splash-04 {
-    background-image: url("https://res.cloudinary.com/dy2azwmd6/image/upload/v1641823341/travel_04.jpg");
-    animation-delay: 9s;
+    background-image: url("../../../public/images/travel_04.jpg");
+    animation-delay: 8s;
 }
 
 #splash-05 {
-    background-image: url("https://res.cloudinary.com/dy2azwmd6/image/upload/v1641823343/travel_05.jpg");
-    animation-delay: 12s;
+    background-image: url("../../../public/images/travel_05.jpg");
+    animation-delay: 11s;
 }
 
 @keyframes imageAnimation {
