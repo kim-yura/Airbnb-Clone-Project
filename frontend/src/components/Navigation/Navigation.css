@@ -12,8 +12,12 @@
     text-decoration: none;
 }
 
+.navbar-left {
+    margin-left: 50px;
+}
+
 .navbar-right {
-    margin-right: 50px;
+    margin-right: 110px;
     display: flex;
     text-decoration: none;
 }

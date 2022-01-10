@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
-import SignupForm from "./components/SignupFormModal/SignupForm";
+
 import * as sessionActions from "./store/session";
+import SignupForm from "./components/SignupFormModal/SignupForm";
 import Navigation from "./components/Navigation";
+import SplashImage from './components/SplashImage';
 import './index.css';
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
           <Route path exact="/">
             <div className="site-background">
               <div className="site-body">
-                Hello
+                <SplashImage />
               </div>
             </div>
           </Route>
