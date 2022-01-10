@@ -6,6 +6,7 @@ import * as sessionActions from "./store/session";
 import SignupForm from "./components/SignupFormModal/SignupForm";
 import Navigation from "./components/Navigation";
 import SplashImage from './components/SplashImage';
+import Footer from "./components/Footer";
 import './index.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <div className="site-body">
                 <SplashImage />
               </div>
+              <Footer />
             </div>
           </Route>
         </Switch>
