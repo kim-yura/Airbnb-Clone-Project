@@ -80,7 +80,7 @@ function SpotCreate() {
     // Reroute users if they are not logged in:
     if (!sessionUser) {
         console.log("You are not logged in!");
-        return <Redirect to="/" />
+        history.push(`/authentication`);
     } else {
 
 
