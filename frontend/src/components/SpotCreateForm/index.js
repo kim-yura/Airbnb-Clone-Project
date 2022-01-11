@@ -11,7 +11,8 @@ function SpotCreate() {
     const history = useHistory();
     const sessionUser = useSelector(state => state.session.user);
 
-    const [userId, setUserId] = useState(sessionUser.id);
+    const [userId, setUserId] = useState("");
+    if (sessionUser) setUserId(sessionUser.id);
     const [address, setAddress] = useState("");
     const [city, setCity] = useState("");
     const [state, setState] = useState("");
