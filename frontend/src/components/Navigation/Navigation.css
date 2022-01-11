@@ -89,3 +89,10 @@ input {
 #logout-button:hover {
     font-weight: bold;
 }
+
+.become-a-host {
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 40px;
+    color: #282828;
+}

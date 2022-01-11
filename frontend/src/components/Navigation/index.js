@@ -31,6 +31,7 @@ function Navigation({ isLoaded }) {
         </NavLink>
       </li>
       <li className="navbar-right">
+        <NavLink className="become-a-host" exact to="/spots/new">Become a Host</NavLink>
         {isLoaded && sessionLinks}
       </li>
     </ul>
