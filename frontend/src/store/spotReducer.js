@@ -43,6 +43,7 @@ export const createNewSpot = (spotData) => async (dispatch) => {
         body: JSON.stringify(spotData),
     });
     const newSpot = await response.json();
+    console.log(newSpot);
     dispatch(createNewSpotAction(newSpot));
     return newSpot;
 }

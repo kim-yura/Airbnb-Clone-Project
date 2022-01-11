@@ -30,7 +30,7 @@ function SpotDisplay() {
                 {lastFourSpots.map(spot => (
                     <li className="spot-tile" key={spot.id}>
                         <a className="spot-details" href={`/spots/${spot.id}`}>
-                            <img className="tile-image" src={spot.Images[0] ? spot.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
+                            <img className="tile-image" src={(spot.Images && spot.Images[0]) ? spot.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
                         </a>
                         <div className="tile-text">
                             <div className="location-price">
