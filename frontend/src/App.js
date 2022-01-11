@@ -10,6 +10,8 @@ import Footer from "./components/Footer";
 import SpotDisplay from "./components/SpotDisplay";
 import SpotDetail from "./components/SpotDetail";
 
+import SplashHost from "./components/SplashHost";
+
 import './index.css';
 
 function App() {
@@ -29,6 +31,7 @@ function App() {
               <div className="site-body">
                 <SplashImage />
                 <SpotDisplay />
+                <SplashHost />
               </div>
               <Footer />
             </div>

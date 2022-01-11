@@ -1,16 +1,36 @@
-.splash-container {
+.host-container {
     box-sizing: border-box;
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    align-self: center;
+    top: 650px;
     height: 200px;
-    top: 1100px;
+    width: 100%;
+    margin-left: 3.3%;
+}
+
+.host-text {
+    box-sizing: border-box;
+    padding-right: 0px;
+    padding-left: 0px;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    z-index: 10;
+    top: 440px;
+    left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(36, 36, 36);
+}
+
+#splash-host {
     background-image: url("../../../public/images/host_01.jpg");
     background-size: cover;
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    color: transparent;
 }

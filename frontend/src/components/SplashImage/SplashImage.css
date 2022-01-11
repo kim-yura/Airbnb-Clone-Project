@@ -22,12 +22,12 @@
     padding-bottom: 20px;
     right: 0;
     z-index: 10;
-    top:500px;
+    top: 500px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: white;
-    text-shadow: 0px 0px 3px gray;
+    text-shadow: 0px 0px 10px rgb(36, 36, 36);
 }
 
 .splash-images {
