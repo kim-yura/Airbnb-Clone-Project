@@ -12,14 +12,14 @@ function SpotCreate() {
     const sessionUser = useSelector(state => state.session.user);
 
     const [userId, setUserId] = useState(sessionUser.id);
-    const [address, setAddress] = useState();
-    const [city, setCity] = useState();
-    const [state, setState] = useState();
-    const [country, setCountry] = useState();
-    const [zipcode, setZipcode] = useState();
-    const [name, setName] = useState();
-    const [price, setPrice] = useState();
-    const [description, setDescription] = useState();
+    const [address, setAddress] = useState("");
+    const [city, setCity] = useState("");
+    const [state, setState] = useState("");
+    const [country, setCountry] = useState("");
+    const [zipcode, setZipcode] = useState("");
+    const [name, setName] = useState("");
+    const [price, setPrice] = useState("");
+    const [description, setDescription] = useState("");
 
     const [validationErrors, setValidationErrors] = useState([]);
 
