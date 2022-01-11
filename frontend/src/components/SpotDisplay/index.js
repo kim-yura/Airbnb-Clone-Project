@@ -37,7 +37,7 @@ function SpotDisplay() {
                                     {spot.city}, {spot.state}, {spot.country}
                                 </a>
                                 <p className="price">
-                                    ${spot.price}/night
+                                    ${spot.price} / night
                                 </p>
                             </div>
                         </div>

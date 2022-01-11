@@ -28,13 +28,28 @@ h1 {
     color: #282828;
 }
 
+.reviews-header {
+    font-family: 'Montserrat', sans-serif;
+    color: #282828;
+    margin-right: 16%;
+    margin-top: 40px;
+    text-align: right;
+}
+
 h3 {
     font-family: 'Open Sans', sans-serif;
     color: #282828;
 }
 
+.detail-long-text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    margin-right: 15%;
+}
+
 .detail-reviews {
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
     margin-left: 8%;
     margin-right: 8%;
