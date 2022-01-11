@@ -28,8 +28,8 @@ function App() {
             <div className="site-background">
               <div className="site-body">
                 <SplashImage />
+                <SpotDisplay />
               </div>
-              <SpotDisplay />
               <Footer />
             </div>
           </Route>

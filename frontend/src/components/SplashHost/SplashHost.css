@@ -1,0 +1,16 @@
+.splash-container {
+    box-sizing: border-box;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-self: center;
+    height: 200px;
+    top: 1100px;
+    background-image: url("../../../public/images/host_01.jpg");
+    background-size: cover;
+}

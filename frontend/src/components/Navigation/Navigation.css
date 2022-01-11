@@ -9,6 +9,8 @@
     left: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 8%;
+    padding-right: 8%;
     text-decoration: none;
 }
 
@@ -17,7 +19,6 @@
 }
 
 .navbar-right {
-    margin-right: 110px;
     display: flex;
     text-decoration: none;
 }
