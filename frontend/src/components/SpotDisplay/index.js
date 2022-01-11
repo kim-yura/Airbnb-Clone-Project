@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { loadAllSpots } from '../../store/spotReducer';
@@ -19,20 +20,31 @@ function SpotDisplay() {
     }, [dispatch]);
 
     const allSpotsArr = Object.values(allSpots);
-    const firstThreeSpots = allSpotsArr.slice(0, 3);
+    const firstFourSpots = allSpotsArr.slice(0, 4);
 
     return (
         <div className="spot-display-container">
             <h2>Find your next destination</h2>
             <ul className="tile-grid">
-                {firstThreeSpots.map(spot => (
+                {firstFourSpots.map(spot => (
                     <li className="spot-tile" key={spot.id}>
-                        <img className="tile-image" src={spot.Images[0].url} alt="First available image of Spot"></img>
-                        <h3>{spot.name}</h3>
+                        <a className="spot-details" href={`/spots/${spot.id}`}>
+                            <img className="tile-image" src={spot.Images[0].url} alt="First available image of Spot"></img>
+                        </a>
+                        <div className="tile-text">
+                            <div className="location-price">
+                                <a className="location" href={`https://www.google.com/maps/place/${spot.city}+${spot.state}+${spot.country}`}>
+                                    {spot.city}, {spot.state}, {spot.country}
+                                </a>
+                                <p className="price">
+                                    ${spot.price}/night
+                                </p>
+                            </div>
+                        </div>
                     </li>
                 ))}
             </ul>
-        </div>
+        </div >
     )
 }
 

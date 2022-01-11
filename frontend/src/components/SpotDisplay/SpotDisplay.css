@@ -1,37 +1,56 @@
 .spot-display-container {
     position: relative;
-    top: 550px;
+    top: 600px;
     margin-left: 8%;
     margin-right: 8%;
     font-family: 'Montserrat', sans-serif;
     color: #282828;
 }
 
-.spot-display-container > h2 {
-    color: #282828;
-}
-
 .tile-grid {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 10px;
     display: flex;
     flex-direction: row;
     align-content: center;
+    justify-content: space-between;
+}
+
+.spot-details {
+    text-decoration: none;
 }
 
 .spot-tile {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+    padding-top: 10px;
+    position: relative;
+    width: 240px;
 }
 
 .tile-image {
-    background-color: red;
-    height: 200px;
-    width: 200px;
-    overflow: fill;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 20px;
 }
 
-h3 {
-    font-size: 16px;
+.spot-name {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.location-price {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+    font-weight: bold;
+    color: #FF5A5F;
+    text-decoration: none;
+
 }

@@ -29,9 +29,9 @@ function App() {
               <div className="site-body">
                 <SplashImage />
               </div>
+              <SpotDisplay />
               <Footer />
             </div>
-            <SpotDisplay />
           </Route>
 
           <Route path="/spots/:spotId">
