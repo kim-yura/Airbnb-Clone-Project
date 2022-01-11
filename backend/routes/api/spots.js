@@ -1,6 +1,9 @@
 const express = require('express');
 const asyncHandler = require('express-async-handler');
 
+const csrf = require('csurf');
+const csrfProtection = csrf({ cookies: true });
+
 const db = require('../../db/models');
 const { Booking, Image, Review, Spot, User } = db;
 
@@ -30,6 +33,25 @@ router.get('/:id(\\d+)', asyncHandler(async (req, res) => {
     });
     return res.json(spot);
 }));
+
+router.post('/new', asyncHandler(async (req, res) => {
+    const newSpot = req.body;
+
+    const {
+        userId,
+        address,
+        city,
+        state,
+        country,
+        zipcode,
+        name,
+        price,
+        description
+    } = req.body;
+
+    await Spot.create(newSpot);
+    return res.json({newSpot});
+}))
 
 
 

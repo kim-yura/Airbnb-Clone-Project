@@ -14,6 +14,8 @@ import SplashHost from "./components/SplashHost";
 
 import SpotCreate from "./components/SpotCreateForm";
 
+import UserAuthentication from "./components/UserAuthentication";
+
 import './index.css';
 
 function App() {
@@ -43,6 +45,10 @@ function App() {
 
             <Route path="/spots/:spotId">
               <SpotDetail />
+            </Route>
+
+            <Route path="/authentication">
+              <UserAuthentication />
             </Route>
 
 

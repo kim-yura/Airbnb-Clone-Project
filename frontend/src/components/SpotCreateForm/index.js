@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Redirect } from "react-router-dom";
 
+import { createNewSpot } from "../../store/spotReducer";
+
 import "./SpotCreateForm.css";
 
 function SpotCreate() {
@@ -21,7 +23,7 @@ function SpotCreate() {
 
     const [validationErrors, setValidationErrors] = useState([]);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         const newSpot = {
@@ -63,7 +65,12 @@ function SpotCreate() {
 
         setValidationErrors(errors);
 
-        // TODO: ROUTE HANDLING TO PUSH NEWSPOT TO DB
+        if (!validationErrors.length) {
+            // TODO: ROUTE HANDLING TO PUSH NEWSPOT TO DB
+            let res = await dispatch(createNewSpot(newSpot));
+            console.log(res);
+            history.push(`/`);
+        }
 
         // TODO: UPON SUCCESS, ROUTE USER TO THE NEW SPOT PAGE
         // history.push(`/spots/${SPOTID HERE}`)

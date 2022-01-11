@@ -2,6 +2,7 @@ import { csrfFetch } from "./csrf";
 
 const LOAD_ALL_SPOTS = 'spot/loadAllSpots';
 const LOAD_SPOT_DETAIL = 'spot/loadSpotDetail';
+const CREATE_NEW_SPOT = 'spot/createNewSpot';
 
 
 
@@ -36,6 +37,23 @@ export const loadSpotDetailAction = (spot, spotId) => {
 };
 
 
+export const createNewSpot = (spotData) => async (dispatch) => {
+    const response = await csrfFetch('/api/spots/new', {
+        method: 'POST',
+        body: JSON.stringify(spotData),
+    });
+    const newSpot = await response.json();
+    dispatch(createNewSpotAction(newSpot));
+    return newSpot;
+}
+
+export const createNewSpotAction = (newSpot) => {
+    return {
+        type: CREATE_NEW_SPOT,
+        newSpot
+    }
+}
+
 
 
 const spotReducer = (state = {}, action) => {
@@ -47,6 +65,9 @@ const spotReducer = (state = {}, action) => {
             return newState;
         case LOAD_SPOT_DETAIL:
             newState[action.spotId] = action.spot;
+            return newState;
+        case CREATE_NEW_SPOT:
+            newState = { ...newState, [action.newSpot.id]: action.newSpot };
             return newState;
         default:
             return state;
