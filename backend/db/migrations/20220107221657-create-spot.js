@@ -30,13 +30,9 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
-      lat: {
+      zipcode: {
         allowNull: false,
-        type: Sequelize.DECIMAL
-      },
-      lng: {
-        allowNull: false,
-        type: Sequelize.DECIMAL
+        type: Sequelize.INTEGER
       },
       name: {
         allowNull: false,
@@ -46,13 +42,19 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DECIMAL
       },
+      description: {
+        allowNull: false,
+        type: Sequelize.STRING(5000)
+      },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now')
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.fn('now')
       }
     });
   },

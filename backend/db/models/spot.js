@@ -22,13 +22,9 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.STRING
     },
-    lat: {
+    zipcode: {
       allowNull: false,
-      type: DataTypes.DECIMAL
-    },
-    lng: {
-      allowNull: false,
-      type: DataTypes.DECIMAL
+      type: DataTypes.INTEGER
     },
     name: {
       allowNull: false,
@@ -37,7 +33,11 @@ module.exports = (sequelize, DataTypes) => {
     price: {
       allowNull: false,
       type: DataTypes.DECIMAL
-    }
+    },
+    description: {
+      allowNull: false,
+      type: DataTypes.STRING(5000)
+    },
   }, {});
   Spot.associate = function (models) {
     // associations can be defined here
