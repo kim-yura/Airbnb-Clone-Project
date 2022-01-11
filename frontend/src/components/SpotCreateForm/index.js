@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useHistory, Redirect } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import { createNewSpot } from "../../store/spotReducer";
 
@@ -11,8 +11,7 @@ function SpotCreate() {
     const history = useHistory();
     const sessionUser = useSelector(state => state.session.user);
 
-    const [userId, setUserId] = useState("");
-    if (sessionUser) setUserId(sessionUser.id);
+    const [userId, setUserId] = useState(sessionUser ? sessionUser.id : "");
     const [address, setAddress] = useState("");
     const [city, setCity] = useState("");
     const [state, setState] = useState("");
@@ -80,8 +79,8 @@ function SpotCreate() {
     // Reroute users if they are not logged in:
     if (!sessionUser) {
         console.log("You are not logged in!");
-        history.push(`/authentication`);
-        return null;
+        history.push("/authentication");
+        // return <Redirect to="/" />
     } else {
 
 
@@ -165,6 +164,10 @@ function SpotCreate() {
             </div>
         )
     }
+
+    return (
+        <></>
+    )
 }
 
 
