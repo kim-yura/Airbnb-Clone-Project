@@ -51,6 +51,18 @@ router.post('/new', asyncHandler(async (req, res) => {
 
     await Spot.create(newSpot);
     return res.json({newSpot});
+}));
+
+router.get('/:id/edit', asyncHandler(async (req, res) => {
+    const spotId = req.params.id;
+    const spot = await Spot.findByPk(spotId, {
+        include: [
+            Image,
+            Review,
+            User
+        ]
+    });
+    return res.json(spot);
 }))
 
 
