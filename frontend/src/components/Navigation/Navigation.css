@@ -34,3 +34,57 @@ input {
     border-radius: 10px;
     border-color: lightgray;
 }
+
+.dropdown-button {
+    position: absolute;
+    right: 8%;
+    top: 40px;
+    font-size: 32px;
+    color: #FF5A5F;
+}
+
+.profile-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    background: white;
+    box-shadow: 0 3px 3px lightgray;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    position: absolute;
+    right: 50px;
+    list-style: none;
+    position: absolute;
+    right: 5%;
+    top: 95px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dropdown-content > li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#logout-button {
+    border: none;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.greeting {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.list-link:hover {
+    font-weight: bold;
+}
+
+#logout-button:hover {
+    font-weight: bold;
+}
