@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
-import { loadSpotDetail } from '../../store/spotReducer';
+import { loadSpotDetail, deleteSpot } from '../../store/spotReducer';
 
 
 import './SpotDetail.css';
 
 function SpotDetail() {
     const dispatch = useDispatch();
+    const history = useHistory();
     const { spotId } = useParams();
     const sessionUser = useSelector(state => state.session.user);
 
@@ -42,7 +43,13 @@ function SpotDetail() {
 
                     <div className="edit-delete-buttons">
                         <a>Edit</a>
-                        <a>Delete</a>
+                        <a
+                            onClick={(e) => {
+                                dispatch(deleteSpot(spotObj.id))
+                                history.push("/")
+                            }}>
+                            Delete
+                        </a>
                     </div>
 
                     <h2 className="reviews-header">Reviews</h2>

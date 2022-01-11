@@ -5,6 +5,7 @@ const csrf = require('csurf');
 const csrfProtection = csrf({ cookies: true });
 
 const db = require('../../db/models');
+const { response } = require('express');
 const { Booking, Image, Review, Spot, User } = db;
 
 const router = express.Router();
@@ -50,7 +51,7 @@ router.post('/new', asyncHandler(async (req, res) => {
     } = req.body;
 
     await Spot.create(newSpot);
-    return res.json({newSpot});
+    return res.json({ newSpot });
 }));
 
 router.get('/:id/edit', asyncHandler(async (req, res) => {
@@ -63,7 +64,15 @@ router.get('/:id/edit', asyncHandler(async (req, res) => {
         ]
     });
     return res.json(spot);
-}))
+}));
+
+router.delete('/:id(\\d+)', asyncHandler(async (req, res) => {
+    const spotId = req.params.id;
+    const spot = await Spot.findByPk(spotId);
+    console.log(spot);
+    await spot.destroy();
+    return res.json({ spot });
+}));
 
 
 

@@ -80,7 +80,6 @@ function SpotCreate() {
     if (!sessionUser) {
         console.log("You are not logged in!");
         history.push("/authentication");
-        // return <Redirect to="/" />
     } else {
 
 
