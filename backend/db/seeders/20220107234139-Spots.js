@@ -10,12 +10,10 @@ module.exports = {
         city: 'Everett',
         state: 'WA',
         country: 'USA',
-        lat: 47.91403,
-        lng: -122.21734,
+        zipcode: '98208',
         name: 'Cozy Retreat Close to Clark Park',
         price: 30.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `This is a large private room in the lower unit of a house. (Please be advice that you are not renting entire house or entire unit rather only a private bedroom.) The unit has a shared kitchen, living room, large screen TV, High speed wireless internet, coffee, tea, toaster, laundry etc. It has a queen-size beds and a couch accommodating a group (up to 2 people). Free parking place is available.`
       },
       {
         id: 2,
@@ -24,12 +22,12 @@ module.exports = {
         city: 'Port Angeles',
         state: 'WA',
         country: 'USA',
-        lat: 48.11047,
-        lng: -123.43480,
+        zipcode: '98362',
         name: 'Spare Bedroom Nestled under Mt Olympus',
         price: 45.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `The Birch Treehouse is a cozy room with a hand crafted, white birch log bed! Incorporated into the headboard is a real birch tree! The branches reach to the high ceiling, and bend over the bed, creating a natural canopy! It will stir memories of childhood adventures in and around the trees!
+
+        Enter on your private deck and through your private entry, with keyless locks. Your guest suite includes a private bath. Besides your guest room, you are free to enjoy your own private deck; the library sitting area with Butler’s Pantry; large deck with Mountain Views; and outdoor spa.`
       },
       {
         id: 3,
@@ -38,12 +36,12 @@ module.exports = {
         city: 'Port Angeles',
         state: 'WA',
         country: 'USA',
-        lat: 48.10811,
-        lng: -123.43058,
+        zipcode: '98362',
         name: 'Relax Next to Olympic National Park!',
         price: 40.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 4,
@@ -52,12 +50,12 @@ module.exports = {
         city: 'Port Angeles',
         state: 'WA',
         country: 'USA',
-        lat: 48.10201,
-        lng: -123.44880,
+        zipcode: '98362',
         name: 'Weekend Getaway at Olympic National Park',
         price: 48.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 5,
@@ -66,12 +64,12 @@ module.exports = {
         city: 'New York',
         state: 'NY',
         country: 'USA',
-        lat: 40.74626,
-        lng: -73.99258,
+        zipcode: '10001',
         name: 'Walking Distance to Times Square',
         price: 40,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 6,
@@ -80,12 +78,12 @@ module.exports = {
         city: 'New York',
         state: 'NY',
         country: 'USA',
-        lat: 40.75498,
-        lng: -73.99104,
+        zipcode: '10018',
         name: 'Experience the Best of NYC',
         price: 50,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 7,
@@ -94,12 +92,12 @@ module.exports = {
         city: 'New York',
         state: 'NY',
         country: 'USA',
-        lat: 40.77767,
-        lng: -73.96041,
+        zipcode: '10028',
         name: 'Cozy Bedroom Right Off Museum Mile, Manhattan',
         price: 65,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 8,
@@ -108,12 +106,12 @@ module.exports = {
         city: 'Brooklyn',
         state: 'NY',
         country: 'USA',
-        lat: 40.67681,
-        lng: -73.94255,
+        zipcode: '11216',
         name: 'Comfortable Bed with Public Transport to Manhattan',
         price: 30,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 9,
@@ -122,12 +120,12 @@ module.exports = {
         city: 'San Francisco',
         state: 'CA',
         country: 'USA',
-        lat: 37.77316,
-        lng: -122.48174,
+        zipcode: '94121',
         name: 'Clean, Modern Spare Room Right in the Middle of Town',
         price: 45.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 10,
@@ -136,12 +134,12 @@ module.exports = {
         city: 'San Francisco',
         state: 'CA',
         country: 'USA',
-        lat: 37.77357,
-        lng: -122.51010,
+        zipcode: '94121',
         name: 'Relax on the Beach!',
         price: 65.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 11,
@@ -150,12 +148,12 @@ module.exports = {
         city: 'San Francisco',
         state: 'CA',
         country: 'USA',
-        lat: 37.73605,
-        lng: -122.50529,
+        zipcode: '94116',
         name: 'Walking Distance Between San Francisco Zoo and Ocean Beach',
         price: 70.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 12,
@@ -164,12 +162,12 @@ module.exports = {
         city: 'Chicago',
         state: 'IL',
         country: 'USA',
-        lat: 41.86470,
-        lng: -87.62847,
+        zipcode: '60605',
         name: 'Perfect Weekend Getaway in the Big City',
         price: 55.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 13,
@@ -178,12 +176,12 @@ module.exports = {
         city: 'Chicago',
         state: 'IL',
         country: 'USA',
-        lat: 41.86688,
-        lng: -87.62732,
+        zipcode: '60605',
         name: 'Rustic Farmhouse Spare Room',
         price: 50.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 14,
@@ -192,12 +190,12 @@ module.exports = {
         city: 'Vancouver',
         state: 'BC',
         country: 'Canada',
-        lat: 49.28334,
-        lng: -123.13177,
+        zipcode: 'V6E 1K7',
         name: 'Cozy Attic Room in Downtown Vancouver',
         price: 55.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 15,
@@ -206,12 +204,12 @@ module.exports = {
         city: 'Vancouver',
         state: 'BC',
         country: 'Canada',
-        lat: 49.28472,
-        lng: -123.11625,
+        zipcode: 'V7Y 1C6',
         name: '5 minutes from Vancouver Art Gallery',
         price: 59.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 16,
@@ -220,12 +218,12 @@ module.exports = {
         city: 'Vancouver',
         state: 'BC',
         country: 'Canada',
-        lat: 49.27953,
-        lng: -123.11807,
+        zipcode: 'V6B 2B5',
         name: 'Two Twin Beds Available Downtown Vancouver',
         price: 30.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 17,
@@ -234,12 +232,12 @@ module.exports = {
         city: 'Hanover',
         state: 'NH',
         country: 'USA',
-        lat: 43.70369,
-        lng: -72.27469,
+        zipcode: '03755',
         name: 'Walking Distance to Dartmouth Campus',
         price: 40.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 18,
@@ -248,12 +246,12 @@ module.exports = {
         city: 'New Orleans',
         state: 'LA',
         country: 'USA',
-        lat: 29.95994,
-        lng: -90.06459,
+        zipcode: '70116',
         name: 'Stay in the French Quarter!',
         price: 50.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 19,
@@ -262,12 +260,12 @@ module.exports = {
         city: 'New Orleans',
         state: 'LA',
         country: 'USA',
-        lat: 29.95488,
-        lng: -90.06079,
+        zipcode: '70130',
         name: 'Farmhouse Chic in the French Quarter',
         price: 55.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
         id: 20,
@@ -276,12 +274,12 @@ module.exports = {
         city: 'Nashville',
         state: 'TN',
         country: 'USA',
-        lat: 36.14701,
-        lng: -86.79022,
+        zipcode: '37212',
         name: 'Welcome to Music City!',
         price: 40.00,
-        createdAt: new Date(),
-        updatedAt: new Date()
+        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu quam iaculis, volutpat magna eu, elementum diam. Sed gravida maximus ante, ut ultricies lacus consectetur eu. Etiam porta tortor id tellus blandit, non faucibus tellus ultrices. Sed id nisi ut risus volutpat placerat. Vivamus volutpat a odio ut eleifend. Cras imperdiet lorem id lacus sollicitudin lobortis. Proin mollis dignissim velit, at molestie ante rhoncus eget.
+
+        Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       }
     ], {});
   },
