@@ -12,6 +12,8 @@ import SpotDetail from "./components/SpotDetail";
 
 import SplashHost from "./components/SplashHost";
 
+import SpotCreate from "./components/SpotCreateForm";
+
 import './index.css';
 
 function App() {
@@ -24,26 +26,31 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
-      {isLoaded && (
-        <Switch>
-          <Route exact path="/">
-            <div className="site-background">
+      <div className="site-background">
+        {isLoaded && (
+          <Switch>
+            <Route exact path="/">
               <div className="site-body">
                 <SplashImage />
                 <SpotDisplay />
                 <SplashHost />
               </div>
-              <Footer />
-            </div>
-          </Route>
+            </Route>
 
-          <Route path="/spots/:spotId">
-            <SpotDetail />
-            <Footer />
-          </Route>
+            <Route path="/spots/new">
+              <SpotCreate />
+            </Route>
 
-        </Switch>
-      )}
+            <Route path="/spots/:spotId">
+              <SpotDetail />
+            </Route>
+
+
+          </Switch>
+        )}
+
+      </div>
+      <Footer />
     </>
   );
 }

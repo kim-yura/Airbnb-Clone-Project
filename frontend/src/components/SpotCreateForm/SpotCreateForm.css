@@ -1,0 +1,24 @@
+.new-spot-form {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.new-spot-errors {
+    color: #FF5A5F;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.spot-error {
+    margin-bottom: -10px;
+}
+
+.new-spot-form-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
