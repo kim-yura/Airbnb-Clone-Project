@@ -20,13 +20,14 @@ function SpotDisplay() {
     }, [dispatch]);
 
     const allSpotsArr = Object.values(allSpots);
-    const firstFourSpots = allSpotsArr.slice(0, 4);
+    // const firstFourSpots = allSpotsArr.slice(0, 4);
+    const lastFourSpots = allSpotsArr.slice(-4);
 
     return (
         <div className="spot-display-container">
-            <h2>Find your next destination</h2>
+            <h2>Browse recent Spots</h2>
             <ul className="tile-grid">
-                {firstFourSpots.map(spot => (
+                {lastFourSpots.map(spot => (
                     <li className="spot-tile" key={spot.id}>
                         <a className="spot-details" href={`/spots/${spot.id}`}>
                             <img className="tile-image" src={spot.Images[0].url} alt="First available image of Spot"></img>
