@@ -60,3 +60,24 @@ h3 {
     font-size: 14px;
     font-weight: 600
 }
+
+.edit-delete-buttons {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    display: flex;
+    margin-left: 8%;
+    width: 400px;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.edit-delete-buttons > a {
+    background-color: #FF5A5F;
+    width: 100px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
