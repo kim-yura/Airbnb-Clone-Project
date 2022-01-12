@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
 import LoginForm from "../LoginFormModal/LoginForm";
+import DemoLogin from "../DemoLogin";
 
 import "./UserAuthentication.css";
 
@@ -24,6 +25,7 @@ function UserAuthentication() {
         <>
             <p className="error-message">You must be signed in to access this page!</p>
             <LoginForm />
+            <DemoLogin />
         </>
     )
 };
