@@ -83,7 +83,7 @@ function SpotCreate() {
 
 
         return (
-            <div className="site-background">
+            <div className="new-spot-background">
                 <form className="new-spot-form" onSubmit={handleSubmit}>
                     <div className="new-spot-errors">
                         {validationErrors.length > 0 &&

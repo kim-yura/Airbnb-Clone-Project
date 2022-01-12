@@ -94,88 +94,83 @@ function SpotEdit() {
 
 
     return (
-        <>
-            <h1>SPOT LOAD RAN FOR SPOT</h1>
-            <p>{spotObj ? spotObj.id : ""}</p>
+        <div className="edit-spot-background">
+            <form className="new-spot-form" onSubmit={handleSubmit}>
+                <div className="new-spot-errors">
+                    {validationErrors.length > 0 &&
+                        validationErrors.map(error =>
+                            <p className="spot-error" key={error}>
+                                {error}
+                            </p>
+                        )}
+                </div>
 
-            <div className="site-background">
-                <form className="new-spot-form" onSubmit={handleSubmit}>
-                    <div className="new-spot-errors">
-                        {validationErrors.length > 0 &&
-                            validationErrors.map(error =>
-                                <p className="spot-error" key={error}>
-                                    {error}
-                                </p>
-                            )}
-                    </div>
+                <div className="new-spot-form-inputs">
+                    <input
+                        onChange={(e) => setAddress(e.target.value)}
+                        value={address}
+                        id="address"
+                        type="text"
+                        placeholder="address"
+                    />
+                    <input
+                        onChange={(e) => setCity(e.target.value)}
+                        value={city}
+                        id="city"
+                        type="text"
+                        placeholder="city"
+                    />
+                    <input
+                        onChange={(e) => setState(e.target.value)}
+                        value={state}
+                        id="state"
+                        type="text"
+                        placeholder="state"
+                    />
+                    <input
+                        onChange={(e) => setCountry(e.target.value)}
+                        value={country}
+                        id="country"
+                        type="text"
+                        placeholder="country"
+                    />
+                    <input
+                        onChange={(e) => setZipcode(e.target.value)}
+                        value={zipcode}
+                        id="zipcode"
+                        type="text"
+                        placeholder="zipcode"
+                    />
+                    <input
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        id="name"
+                        type="text"
+                        placeholder="name"
+                    />
+                    <input
+                        onChange={(e) => setPrice(e.target.value)}
+                        value={price}
+                        id="price"
+                        type="number"
+                        step="0.01"
+                        placeholder="0.00"
+                    />
+                    <textarea
+                        onChange={(e) => setDescription(e.target.value)}
+                        value={description}
+                        id="description"
+                        placeholder="description"
+                    />
+                </div>
 
-                    <div className="new-spot-form-inputs">
-                        <input
-                            onChange={(e) => setAddress(e.target.value)}
-                            value={address}
-                            id="address"
-                            type="text"
-                            placeholder="address"
-                        />
-                        <input
-                            onChange={(e) => setCity(e.target.value)}
-                            value={city}
-                            id="city"
-                            type="text"
-                            placeholder="city"
-                        />
-                        <input
-                            onChange={(e) => setState(e.target.value)}
-                            value={state}
-                            id="state"
-                            type="text"
-                            placeholder="state"
-                        />
-                        <input
-                            onChange={(e) => setCountry(e.target.value)}
-                            value={country}
-                            id="country"
-                            type="text"
-                            placeholder="country"
-                        />
-                        <input
-                            onChange={(e) => setZipcode(e.target.value)}
-                            value={zipcode}
-                            id="zipcode"
-                            type="text"
-                            placeholder="zipcode"
-                        />
-                        <input
-                            onChange={(e) => setName(e.target.value)}
-                            value={name}
-                            id="name"
-                            type="text"
-                            placeholder="name"
-                        />
-                        <input
-                            onChange={(e) => setPrice(e.target.value)}
-                            value={price}
-                            id="price"
-                            type="number"
-                            step="0.01"
-                            placeholder="0.00"
-                        />
-                        <textarea
-                            onChange={(e) => setDescription(e.target.value)}
-                            value={description}
-                            id="description"
-                            placeholder="description"
-                        />
-                    </div>
-
-                    <button type="submit">
-                        Submit
-                    </button>
+                <button type="submit" className="submit-spot">
+                    Submit
+                </button>
 
 
-                </form>
-            </div>
-        </>
+            </form>
+        </div>
     )
 }
 
