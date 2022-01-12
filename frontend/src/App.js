@@ -13,6 +13,7 @@ import SpotDetail from "./components/SpotDetail";
 import SplashHost from "./components/SplashHost";
 
 import SpotCreate from "./components/SpotCreateForm";
+import SpotEdit from "./components/SpotEditForm";
 
 import UserAuthentication from "./components/UserAuthentication";
 
@@ -41,6 +42,11 @@ function App() {
 
             <Route path="/spots/new">
               <SpotCreate />
+            </Route>
+
+
+            <Route path="/spots/:spotId/edit">
+              <SpotEdit />
             </Route>
 
             <Route path="/spots/:spotId">

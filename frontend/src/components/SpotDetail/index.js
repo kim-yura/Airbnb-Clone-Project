@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
 
-import { loadSpotDetail, deleteSpot } from '../../store/spotReducer';
+import { loadUpdateSpot, loadSpotDetail, deleteSpot } from '../../store/spotReducer';
 
 
 import './SpotDetail.css';
@@ -43,7 +43,9 @@ function SpotDetail() {
                         </div>
 
                         <div className="edit-delete-buttons">
-                            <a>Edit</a>
+                            <a href={`/spots/${spotObj.id}/edit`}>
+                                Edit
+                            </a>
                             <a
                                 onClick={(e) => {
                                     dispatch(deleteSpot(spotObj.id))
