@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as sessionActions from "../../store/session";
 import { useDispatch } from "react-redux";
-import { useHistory, UseHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import './LoginForm.css';
 
