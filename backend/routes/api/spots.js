@@ -11,7 +11,6 @@ const { Booking, Image, Review, Spot, User } = db;
 const router = express.Router();
 
 
-
 router.get('/', asyncHandler(async (req, res) => {
     const allSpots = await Spot.findAll({
         include: [
@@ -22,6 +21,7 @@ router.get('/', asyncHandler(async (req, res) => {
     });
     return res.json(allSpots);
 }));
+
 
 router.get('/:id(\\d+)', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
@@ -34,6 +34,7 @@ router.get('/:id(\\d+)', asyncHandler(async (req, res) => {
     });
     return res.json(spot);
 }));
+
 
 router.post('/new', asyncHandler(async (req, res) => {
     const newSpot = req.body;
@@ -54,7 +55,8 @@ router.post('/new', asyncHandler(async (req, res) => {
     return res.json({ newSpot });
 }));
 
-router.get('/:id/edit', asyncHandler(async (req, res) => {
+
+router.get('/:id(\\d+)/edit', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
     const spot = await Spot.findByPk(spotId, {
         include: [
@@ -66,10 +68,25 @@ router.get('/:id/edit', asyncHandler(async (req, res) => {
     return res.json(spot);
 }));
 
+
+router.put('/:id(\\d+)', asyncHandler(async (req, res) => {
+    const spotId = req.params.id;
+    const updatedSpot = req.body;
+    const spot = await Spot.findByPk(spotId, {
+        include: [
+            Image,
+            Review,
+            User
+        ]
+    });
+    await spot.put(updatedSpot);
+    return res.json({ updatedSpot });
+}));
+
+
 router.delete('/:id(\\d+)', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
     const spot = await Spot.findByPk(spotId);
-    console.log(spot);
     await spot.destroy();
     return res.json({ spot });
 }));
