@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
-import { createNewSpot } from "../../store/spotReducer";
+import { createNewSpot, loadAllSpots } from "../../store/spotReducer";
 
 import "./SpotCreateForm.css";
 

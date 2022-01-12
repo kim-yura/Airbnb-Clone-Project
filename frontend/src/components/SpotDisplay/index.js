@@ -26,23 +26,48 @@ function SpotDisplay() {
         <div className="spot-display-container">
             <h2>Browse recent Spots</h2>
             <ul className="tile-grid">
-                {lastFourSpots.map(spot => (
-                    <li className="spot-tile" key={spot.id}>
-                        <a className="spot-details" href={`/spots/${spot.id}`} key={spot.id}>
-                            <img className="tile-image" src={(spot.Images && spot.Images[0]) ? spot.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
-                        </a>
-                        <div className="tile-text">
-                            <div className="location-price">
-                                <a className="location" href={`https://www.google.com/maps/place/${spot.city}+${spot.state}+${spot.country}`} target="_blank">
-                                    {spot.city}, {spot.state}, {spot.country}
+                {lastFourSpots.map(spot => {
+                    console.log(spot);
+                    if (spot) {
+                        return (
+                            <li className="spot-tile" key={spot.id}>
+                                <a className="spot-details" href={`/spots/${spot.id}`} key={spot.id}>
+                                    <img className="tile-image" src={(spot.Images && spot.Images[0]) ? spot.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
                                 </a>
-                                <p className="price">
-                                    ${spot.price} / night
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                ))}
+                                <div className="tile-text">
+                                    <div className="location-price">
+                                        <a className="location" href={`https://www.google.com/maps/place/${spot.city}+${spot.state}+${spot.country}`} target="_blank">
+                                            {spot.city}, {spot.state}, {spot.country}
+                                        </a>
+                                        <p className="price">
+                                            ${spot.price} / night
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        )
+                    } else {
+                        const replacement = (allSpotsArr.slice(-6, -5))[0];
+                        console.log(`REPLACEMENT: `, replacement);
+                        return (
+                            <li className="spot-tile" key={replacement.id}>
+                                <a className="spot-details" href={`/spots/${replacement.id}`} key={replacement.id}>
+                                    <img className="tile-image" src={(replacement.Images && replacement.Images[0]) ? replacement.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
+                                </a>
+                                <div className="tile-text">
+                                    <div className="location-price">
+                                        <a className="location" href={`https://www.google.com/maps/place/${replacement.city}+${replacement.state}+${replacement.country}`} target="_blank">
+                                            {replacement.city}, {replacement.state}, {replacement.country}
+                                        </a>
+                                        <p className="price">
+                                            ${replacement.price} / night
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        )
+                    }
+                })}
             </ul>
         </div >
     )
