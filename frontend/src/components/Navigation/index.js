@@ -26,9 +26,9 @@ function Navigation({ isLoaded }) {
   return (
     <ul className="navbar-top">
       <li className="navbar-left">
-        <NavLink exact to="/">
+        <a href="/">
           <img src="../../logo_rectangle.png" alt="SpareBnB logo"/>
-        </NavLink>
+        </a>
       </li>
       <li className="navbar-right">
         <NavLink className="become-a-host" exact to="/spots/new">Become a Host</NavLink>
