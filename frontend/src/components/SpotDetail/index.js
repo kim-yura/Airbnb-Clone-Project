@@ -55,13 +55,13 @@ function SpotDetail() {
                             </a>
                         </div>
 
-                        <h2 className="reviews-header">Reviews</h2>
+                        {/* <h2 className="reviews-header">Reviews</h2>
                         <div className="detail-reviews">
                             <div className="detail-review">
                                 <p>{spotObj.Reviews[0] ? spotObj.Reviews[0].id : ""}</p>
                                 <p>{spotObj.Reviews[0] ? spotObj.Reviews[0].review : ""}</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </>
             )
@@ -82,13 +82,13 @@ function SpotDetail() {
                             </div>
                         </div>
 
-                        <h2 className="reviews-header">Reviews</h2>
+                        {/* <h2 className="reviews-header">Reviews</h2>
                         <div className="detail-reviews">
                             <div className="detail-review">
                                 <p>{spotObj.Reviews[0] ? spotObj.Reviews[0].id : ""}</p>
                                 <p>{spotObj.Reviews[0] ? spotObj.Reviews[0].review : ""}</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </>
             )
