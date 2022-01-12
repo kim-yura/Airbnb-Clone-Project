@@ -16,7 +16,7 @@ function SpotDisplay() {
 
     useEffect(() => {
         dispatch(loadAllSpots())
-    }, [dispatch]);
+    }, []);
 
     const allSpotsArr = Object.values(allSpots);
     // const firstFourSpots = allSpotsArr.slice(0, 4);
@@ -33,7 +33,7 @@ function SpotDisplay() {
                         </a>
                         <div className="tile-text">
                             <div className="location-price">
-                                <a className="location" href={`https://www.google.com/maps/place/${spot.city}+${spot.state}+${spot.country}`}>
+                                <a className="location" href={`https://www.google.com/maps/place/${spot.city}+${spot.state}+${spot.country}`} target="_blank">
                                     {spot.city}, {spot.state}, {spot.country}
                                 </a>
                                 <p className="price">
