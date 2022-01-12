@@ -47,7 +47,7 @@ function SpotDisplay() {
                             </li>
                         )
                     } else {
-                        const replacement = (allSpotsArr.slice(-6, -5))[0];
+                        const replacement = (allSpotsArr[0]);
                         console.log(`REPLACEMENT: `, replacement);
                         return (
                             <li className="spot-tile" key={replacement.id}>

@@ -1,0 +1,17 @@
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.fa-trash-alt {
+    color: #FF5A5F;
+    font-size: 72px;
+    padding-top: 25px;
+}
+
+.delete-confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

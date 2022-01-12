@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory, useParams } from 'react-router-dom';
+import { Modal } from '../../context/Modal';
 
 import { loadUpdateSpot, loadSpotDetail, deleteSpot } from '../../store/spotReducer';
+import ConfirmDelete from '../SpotDeleteConfirmationModal/ConfirmDelete';
 
 
 import './SpotDetail.css';
@@ -12,6 +14,7 @@ function SpotDetail() {
     const history = useHistory();
     const { spotId } = useParams();
     const sessionUser = useSelector(state => state.session.user);
+    const [showModal, setShowModal] = useState(false);
 
     const spot = useSelector(state => {
         return state.spot
@@ -48,11 +51,17 @@ function SpotDetail() {
                             </Link>
                             <a
                                 onClick={(e) => {
-                                    dispatch(deleteSpot(spotObj.id))
-                                    history.push("/")
+                                    setShowModal(true)
+                                    // dispatch(deleteSpot(spotObj.id))
+                                    // history.push("/")
                                 }}>
                                 Delete
                             </a>
+                            {showModal && (
+                                <Modal onClose={() => setShowModal(false)}>
+                                    <ConfirmDelete />
+                                </Modal>
+                            )}
                         </div>
 
                         {/* <h2 className="reviews-header">Reviews</h2>
