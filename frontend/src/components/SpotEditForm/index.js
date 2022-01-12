@@ -82,8 +82,7 @@ function SpotEdit() {
 
         setValidationErrors(errors);
 
-        if (!validationErrors.length) {
-            console.log(updatedSpot);
+        if (!errors.length) {
             let res = await dispatch(updateSpot(updatedSpot, spotId));
             console.log(res);
             history.push(`/spots/${spotId}`);

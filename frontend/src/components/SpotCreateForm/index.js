@@ -65,7 +65,7 @@ function SpotCreate() {
 
         setValidationErrors(errors);
 
-        if (!validationErrors.length) {
+        if (!errors.length) {
             // TODO: ROUTE HANDLING TO PUSH NEWSPOT TO DB
             let res = await dispatch(createNewSpot(newSpot));
             history.push(`/`);
