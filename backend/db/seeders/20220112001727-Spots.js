@@ -4,7 +4,6 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Spots', [
       {
-        id: 1,
         userId: 1,
         address: '9300 W Mall Dr',
         city: 'Everett',
@@ -16,7 +15,6 @@ module.exports = {
         description: `This is a large private room in the lower unit of a house. (Please be advice that you are not renting entire house or entire unit rather only a private bedroom.) The unit has a shared kitchen, living room, large screen TV, High speed wireless internet, coffee, tea, toaster, laundry etc. It has a queen-size beds and a couch accommodating a group (up to 2 people). Free parking place is available.`
       },
       {
-        id: 2,
         userId: 2,
         address: '317 E 9th St',
         city: 'Port Angeles',
@@ -30,7 +28,6 @@ module.exports = {
         Enter on your private deck and through your private entry, with keyless locks. Your guest suite includes a private bath. Besides your guest room, you are free to enjoy your own private deck; the library sitting area with Butler’s Pantry; large deck with Mountain Views; and outdoor spa.`
       },
       {
-        id: 3,
         userId: 3,
         address: '903 S Albert St',
         city: 'Port Angeles',
@@ -44,7 +41,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 4,
         userId: 4,
         address: '223 W Park Ave',
         city: 'Port Angeles',
@@ -58,7 +54,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 5,
         userId: 5,
         address: '158 W 27th St',
         city: 'New York',
@@ -72,7 +67,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 6,
         userId: 6,
         address: '580 8th Ave',
         city: 'New York',
@@ -86,7 +80,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 7,
         userId: 7,
         address: '45 E 81st St',
         city: 'New York',
@@ -100,7 +93,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 8,
         userId: 8,
         address: '1383 Dean St',
         city: 'Brooklyn',
@@ -114,7 +106,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 9,
         userId: 9,
         address: '778 23rd Ave',
         city: 'San Francisco',
@@ -128,7 +119,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 10,
         userId: 10,
         address: '791 La Playa St',
         city: 'San Francisco',
@@ -142,7 +132,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 11,
         userId: 11,
         address: '3603 Wawona St',
         city: 'San Francisco',
@@ -156,7 +145,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 12,
         userId: 12,
         address: '1342 S Plymouth Ct',
         city: 'Chicago',
@@ -170,7 +158,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 13,
         userId: 13,
         address: '1222 S State St',
         city: 'Chicago',
@@ -184,7 +171,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 14,
         userId: 14,
         address: '1220 Comox St',
         city: 'Vancouver',
@@ -198,7 +184,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 15,
         userId: 15,
         address: '701 W Georgia St',
         city: 'Vancouver',
@@ -212,7 +197,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 16,
         userId: 16,
         address: '814 Richards St',
         city: 'Vancouver',
@@ -226,7 +210,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 17,
         userId: 17,
         address: '3 Freeman Rd',
         city: 'Hanover',
@@ -240,7 +223,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 18,
         userId: 18,
         address: '819 Bourbon St',
         city: 'New Orleans',
@@ -254,7 +236,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 19,
         userId: 19,
         address: '300 Royal St',
         city: 'New Orleans',
@@ -268,7 +249,6 @@ module.exports = {
         Aliquam erat volutpat. Vestibulum commodo aliquam tortor vestibulum semper. Aliquam ut vestibulum erat. Donec luctus mi eget eros tristique, vel molestie nisl pellentesque. Donec facilisis eget nisi ac feugiat. Donec tempor semper neque, in tincidunt sem lobortis non. Nullam at dui rutrum, luctus purus ut, imperdiet sem. Sed convallis placerat eros, et interdum dolor pretium et. Mauris vitae erat eu lacus fermentum hendrerit laoreet a est.`
       },
       {
-        id: 20,
         userId: 20,
         address: '913 15th Ave S',
         city: 'Nashville',
