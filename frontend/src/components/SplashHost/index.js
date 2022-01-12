@@ -5,7 +5,7 @@ import './SplashHost.css';
 function SplashHost() {
     return (
         <div className="host-container">
-            <Link to="/spots/new">
+            <Link to="/spots/new" className="splash-host-link">
                 <div className="host-text">
                     Become a Host.
                 </div>
