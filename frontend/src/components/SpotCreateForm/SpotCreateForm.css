@@ -1,7 +1,11 @@
 .new-spot-form {
     display: flex;
     flex-direction: column;
-
+    background-color: lightgray;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -21,4 +25,36 @@
     display: flex;
     flex-direction: column;
     width: 500px;
+    border: none;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    height: 200px;
+    resize: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+}
+
+.new-spot-form-inputs > input {
+    border-radius: 2px;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid lightgray;
+}
+
+.submit-spot {
+    background-color: #FF5A5F;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    margin-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
 }
