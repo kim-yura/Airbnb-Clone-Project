@@ -68,7 +68,6 @@ function SpotCreate() {
         if (!validationErrors.length) {
             // TODO: ROUTE HANDLING TO PUSH NEWSPOT TO DB
             let res = await dispatch(createNewSpot(newSpot));
-            console.log(res);
             history.push(`/`);
         }
 

@@ -80,10 +80,11 @@ export const loadUpdateSpotAction = (spot, spotId) => {
     }
 };
 
-export const updateSpot = (spotId) => async (dispatch) => {
-    const response = await csrfFetch(`/api/spots/${spotId}/edit`, {
+export const updateSpot = (updatedSpot, spotId) => async (dispatch) => {
+    console.log(spotId)
+    const response = await csrfFetch(`/api/spots/${spotId}`, {
         method: 'PUT',
-        body: JSON.stringify(spotId),
+        body: JSON.stringify(updatedSpot),
     });
     const spotData = await response.json();
     console.log(spotData);

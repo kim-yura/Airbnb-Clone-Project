@@ -69,18 +69,11 @@ router.get('/:id(\\d+)/edit', asyncHandler(async (req, res) => {
 }));
 
 
-router.put('/:id(\\d+)', asyncHandler(async (req, res) => {
+router.put('/:id(\\d+)/', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
-    const updatedSpot = req.body;
-    const spot = await Spot.findByPk(spotId, {
-        include: [
-            Image,
-            Review,
-            User
-        ]
-    });
-    await spot.put(updatedSpot);
-    return res.json({ updatedSpot });
+    const oldSpot = await Spot.findByPk(spotId);
+    const updatedSpot = await oldSpot.update(req.body);
+    return res.json(updatedSpot);
 }));
 
 
