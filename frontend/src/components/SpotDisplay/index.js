@@ -19,7 +19,7 @@ function SpotDisplay() {
     }, []);
 
     const allSpotsArr = Object.values(allSpots);
-    // const firstFourSpots = allSpotsArr.slice(0, 4);
+
     const lastFourSpots = allSpotsArr.reverse().slice(0, 4);
 
     return (
@@ -27,7 +27,6 @@ function SpotDisplay() {
             <h2>Browse recent Spots</h2>
             <ul className="tile-grid">
                 {lastFourSpots.map(spot => {
-                    console.log(spot);
                     if (spot) {
                         return (
                             <li className="spot-tile" key={spot.id}>
@@ -48,7 +47,6 @@ function SpotDisplay() {
                         )
                     } else {
                         const replacement = (allSpotsArr[0]);
-                        console.log(`REPLACEMENT: `, replacement);
                         return (
                             <li className="spot-tile" key={replacement.id}>
                                 <a className="spot-details" href={`/spots/${replacement.id}`} key={replacement.id}>
