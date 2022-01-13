@@ -19,6 +19,8 @@ import UserAuthentication from "./components/UserAuthentication";
 import DeleteConfirmed from "./components/SpotDeleteConfirmationModal/DeleteConfirmed";
 import CreateConfirmed from "./components/SpotCreateForm/CreateConfirmed";
 
+import PageNotFound from "./components/PageNotFound";
+
 import './index.css';
 
 function App() {
@@ -68,6 +70,9 @@ function App() {
             </Route>
 
 
+            <Route>
+              <PageNotFound />
+            </Route>
           </Switch>
         )}
 
