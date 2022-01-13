@@ -48,7 +48,6 @@ export const createNewSpot = (spotData) => async (dispatch) => {
         body: JSON.stringify(spotData),
     });
     const newSpot = await response.json();
-    console.log(newSpot);
     dispatch(createNewSpotAction(newSpot));
     // return newSpot;
 };
@@ -66,8 +65,6 @@ export const createNewSpotAction = (newSpot) => {
 export const loadUpdateSpot = (spotId) => async (dispatch) => {
     const response = await csrfFetch(`/api/spots/${spotId}/edit`);
     const spot = await response.json();
-    // We are hitting this
-    console.log(spot);
     dispatch(loadUpdateSpotAction(spot, spotId));
     return spot;
 };
@@ -81,13 +78,11 @@ export const loadUpdateSpotAction = (spot, spotId) => {
 };
 
 export const updateSpot = (updatedSpot, spotId) => async (dispatch) => {
-    console.log(spotId)
     const response = await csrfFetch(`/api/spots/${spotId}`, {
         method: 'PUT',
         body: JSON.stringify(updatedSpot),
     });
     const spotData = await response.json();
-    console.log(spotData);
     dispatch(updateSpotAction(spotData));
 };
 

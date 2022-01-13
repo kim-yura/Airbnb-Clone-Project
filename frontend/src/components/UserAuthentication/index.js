@@ -15,7 +15,6 @@ function UserAuthentication() {
 
     useEffect(() => {
         if (sessionUser) {
-            console.log("We are logged in!")
             history.push('/');
             return null;
         }

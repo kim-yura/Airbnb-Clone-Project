@@ -92,7 +92,6 @@ function SpotEdit() {
 
         if (!errors.length) {
             let res = await dispatch(updateSpot(updatedSpot, spotId));
-            console.log(res);
             history.push(`/spots/${spotId}`);
 
             // TODO: UPON SUCCESS, ROUTE USER TO THE UPDATED SPOT PAGE
