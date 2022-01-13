@@ -1,6 +1,9 @@
 .new-spot-background {
     background-image: url("../../../public/images/travel_06.jpg");
     height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .new-spot-form {

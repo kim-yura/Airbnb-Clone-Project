@@ -122,46 +122,46 @@ function SpotEdit() {
 
                 <div className="new-spot-form-inputs">
                     <input
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
+                        id="name"
+                        type="text"
+                        placeholder="Enter a name for your Spot"
+                    />
+                    <input
                         onChange={(e) => setAddress(e.target.value)}
                         value={address}
                         id="address"
                         type="text"
-                        placeholder="address"
+                        placeholder="Enter a street address"
                     />
                     <input
                         onChange={(e) => setCity(e.target.value)}
                         value={city}
                         id="city"
                         type="text"
-                        placeholder="city"
+                        placeholder="Enter a city"
                     />
                     <input
                         onChange={(e) => setState(e.target.value)}
                         value={state}
                         id="state"
                         type="text"
-                        placeholder="state"
+                        placeholder="Enter a state"
                     />
                     <input
                         onChange={(e) => setCountry(e.target.value)}
                         value={country}
                         id="country"
                         type="text"
-                        placeholder="country"
+                        placeholder="Enter a country"
                     />
                     <input
                         onChange={(e) => setZipcode(e.target.value)}
                         value={zipcode}
                         id="zipcode"
                         type="text"
-                        placeholder="zipcode"
-                    />
-                    <input
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
-                        id="name"
-                        type="text"
-                        placeholder="name"
+                        placeholder="Enter a zipcode"
                     />
                     <input
                         onChange={(e) => setPrice(e.target.value)}
@@ -169,13 +169,13 @@ function SpotEdit() {
                         id="price"
                         type="number"
                         step="0.01"
-                        placeholder="0.00"
+                        placeholder="Price per Night: 0.00"
                     />
                     <textarea
                         onChange={(e) => setDescription(e.target.value)}
                         value={description}
                         id="description"
-                        placeholder="description"
+                        placeholder="Enter a description for your Spot"
                     />
                     <input
                         onChange={(e) => setImageUrl(e.target.value)}
