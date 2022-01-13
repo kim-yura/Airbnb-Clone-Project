@@ -20,7 +20,7 @@ function SpotDisplay() {
 
     const allSpotsArr = Object.values(allSpots);
     // const firstFourSpots = allSpotsArr.slice(0, 4);
-    const lastFourSpots = allSpotsArr.slice(-4);
+    const lastFourSpots = allSpotsArr.reverse().slice(0, 4);
 
     return (
         <div className="spot-display-container">
@@ -52,7 +52,7 @@ function SpotDisplay() {
                         return (
                             <li className="spot-tile" key={replacement.id}>
                                 <a className="spot-details" href={`/spots/${replacement.id}`} key={replacement.id}>
-                                    <img className="tile-image" src={spot.imageUrl} alt="First available image of Spot"></img>                                </a>
+                                    <img className="tile-image" src={replacement.imageUrl} alt="First available image of Spot"></img>                                </a>
                                 <div className="tile-text">
                                     <div className="location-price">
                                         <a className="location" href={`https://www.google.com/maps/place/${replacement.city}+${replacement.state}+${replacement.country}`} target="_blank">
