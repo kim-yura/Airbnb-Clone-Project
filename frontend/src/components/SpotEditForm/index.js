@@ -79,10 +79,13 @@ function SpotEdit() {
         if (name && (name.length < 5 || name.length > 100)) errors.push('Name must be between 5 and 100 characters.');
 
         if (!price) errors.push('Price cannot be left blank.');
-        if (price <=0) errors.push('Price must be more than 0.00.');
-        const priceRegex = /-?^\d*(\.\d{0,2})?$/;
-        if (!priceRegex.test(price)) {
-            errors.push('Price must be defined up to 2 decimal places.');
+        if (price <= 0) {
+            errors.push('Price must be more than 0.00.');
+        } else {
+            const priceRegex = /-?^\d*(\.\d{0,2})?$/;
+            if (!priceRegex.test(price)) {
+                errors.push('Price must be defined up to 2 decimal places.');
+            };
         };
 
         if (!description) errors.push('Description cannot be left blank.');
