@@ -20,6 +20,7 @@ function SpotCreate() {
     const [name, setName] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
 
     const [validationErrors, setValidationErrors] = useState([]);
 
@@ -35,7 +36,8 @@ function SpotCreate() {
             zipcode,
             name,
             price,
-            description
+            description,
+            imageUrl
         };
 
         const errors = [];
@@ -149,7 +151,13 @@ function SpotCreate() {
                             onChange={(e) => setDescription(e.target.value)}
                             value={description}
                             id="description"
-                            placeholder="description"
+                            placeholder="Enter a description for your Spot"
+                        />
+                        <input
+                            onChange={(e) => setImageUrl(e.target.value)}
+                            value={imageUrl}
+                            id="imageUrl"
+                            placeholder="Enter an image URL (.jpg and .png supported)"
                         />
                     </div>
 

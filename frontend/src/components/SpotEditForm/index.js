@@ -25,6 +25,7 @@ function SpotEdit() {
     const [name, setName] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
+    const [imageUrl, setImageUrl] = useState("");
 
     useEffect(() => {
         setAddress(spotObj?.address);
@@ -35,6 +36,7 @@ function SpotEdit() {
         setName(spotObj?.name);
         setPrice(spotObj?.price);
         setDescription(spotObj?.description);
+        setImageUrl(spotObj?.imageUrl);
 
     }, [dispatch, spotId]);
 
@@ -52,7 +54,8 @@ function SpotEdit() {
             zipcode,
             name,
             price,
-            description
+            description,
+            imageUrl
         };
 
         const errors = [];
@@ -161,6 +164,12 @@ function SpotEdit() {
                         value={description}
                         id="description"
                         placeholder="description"
+                    />
+                    <input
+                        onChange={(e) => setImageUrl(e.target.value)}
+                        value={imageUrl}
+                        id="imageUrl"
+                        placeholder="Enter an image URL (.jpg and .png supported)"
                     />
                 </div>
 
