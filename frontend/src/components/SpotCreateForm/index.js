@@ -62,7 +62,7 @@ function SpotCreate() {
 
         if (!price) errors.push('Price cannot be left blank.');
         if (price <=0) errors.push('Price must be more than 0.00.');
-        const priceRegex = /^\d*(\.\d{0,2})?$/;
+        const priceRegex = /-?^\d*(\.\d{0,2})?$/;
         if (!priceRegex.test(price)) {
             errors.push('Price must be defined up to 2 decimal places.');
         };
