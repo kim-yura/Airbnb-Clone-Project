@@ -5,7 +5,7 @@ import { Modal } from '../../context/Modal';
 
 import { loadUpdateSpot, loadSpotDetail, deleteSpot } from '../../store/spotReducer';
 import ConfirmDelete from '../SpotDeleteConfirmationModal/ConfirmDelete';
-
+import PageNotFound from '../PageNotFound';
 
 import './SpotDetail.css';
 
@@ -104,7 +104,7 @@ function SpotDetail() {
         }
     } else {
         return (
-            <></>
+            <PageNotFound />
         )
     };
 
