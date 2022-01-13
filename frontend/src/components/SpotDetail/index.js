@@ -33,7 +33,7 @@ function SpotDetail() {
                 <>
                     <div className="site-background">
                         <div className="detail-container">
-                            <img className="detail-image" src={spotObj.Images[0] ? spotObj.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="Depiction of spare room available" />
+                            <img className="detail-image" src={spotObj.imageUrl} alt="Depiction of spare room available" />
                             <div className="detail-text">
                                 <h1>{spotObj.name}</h1>
                                 <h3 className="detail-map"><a href={`https://www.google.com/maps/place/${spotObj.city}+${spotObj.state}+${spotObj.country}`} target="_blank">
@@ -79,7 +79,7 @@ function SpotDetail() {
                 <>
                     <div className="site-background">
                         <div className="detail-container">
-                            <img className="detail-image" src={spotObj.Images[0] ? spotObj.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="Depiction of spare room available" />
+                            <img className="detail-image" src={spotObj.imageUrl} alt="Depiction of spare room available" />
                             <div className="detail-text">
                                 <h1>{spotObj.name}</h1>
                                 <h3 className="detail-map"><a href={`https://www.google.com/maps/place/${spotObj.city}+${spotObj.state}+${spotObj.country}`} target="_blank">

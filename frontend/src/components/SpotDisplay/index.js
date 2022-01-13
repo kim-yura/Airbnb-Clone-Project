@@ -32,7 +32,7 @@ function SpotDisplay() {
                         return (
                             <li className="spot-tile" key={spot.id}>
                                 <a className="spot-details" href={`/spots/${spot.id}`} key={spot.id}>
-                                    <img className="tile-image" src={(spot.Images && spot.Images[0]) ? spot.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
+                                    <img className="tile-image" src={spot.imageUrl} alt="First available image of Spot"></img>
                                 </a>
                                 <div className="tile-text">
                                     <div className="location-price">
@@ -52,8 +52,7 @@ function SpotDisplay() {
                         return (
                             <li className="spot-tile" key={replacement.id}>
                                 <a className="spot-details" href={`/spots/${replacement.id}`} key={replacement.id}>
-                                    <img className="tile-image" src={(replacement.Images && replacement.Images[0]) ? replacement.Images[0].url : "https://res.cloudinary.com/dy2azwmd6/image/upload/v1641929219/spot-image-default_a7w3nx.png"} alt="First available image of Spot"></img>
-                                </a>
+                                    <img className="tile-image" src={spot.imageUrl} alt="First available image of Spot"></img>                                </a>
                                 <div className="tile-text">
                                     <div className="location-price">
                                         <a className="location" href={`https://www.google.com/maps/place/${replacement.city}+${replacement.state}+${replacement.country}`} target="_blank">
