@@ -1,6 +1,7 @@
 .edit-spot-background {
     background-image: url("../../../public/images/travel_07.jpg");
     height: 900px;
+    object-fit: cover;
 }
 
 .new-spot-form {
