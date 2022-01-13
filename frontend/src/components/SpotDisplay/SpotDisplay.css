@@ -45,19 +45,22 @@
 }
 
 .location-price {
-    display: flex;
-    font-size: 14px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     justify-content: space-between;
     align-items: center;
+    margin-top: -8px;
 }
 
 .location {
     font-weight: bold;
     color: #FF5A5F;
     text-decoration: none;
+    font-size: 14px;
 
 }
 
 .price {
     font-size: 13px;
+    text-align: right;
 }
