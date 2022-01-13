@@ -70,7 +70,7 @@ function SpotCreate() {
         if (!description) errors.push('Description cannot be left blank.');
         if (description && (description.length < 10 || description.length > 5000)) errors.push('Description must be between 10 and 5000 characters.');
 
-        const imageRegex = /(https?:\/\/.*\.(?:png|jpg))/i;
+        const imageRegex = /(https?:\/\/.*\.(?:png|jpg|jpeg|gif|tiff|bmp))(?:\?([^#]*))?(?:#(.*))?/i;
         if (!imageRegex.test(imageUrl)) {
             errors.push('URL must be a valid jpg or png address.');
         };
