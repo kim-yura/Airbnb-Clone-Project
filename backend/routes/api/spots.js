@@ -6,7 +6,7 @@ const csrfProtection = csrf({ cookies: true });
 
 const db = require('../../db/models');
 const { response } = require('express');
-const { Booking, Image, Review, Spot, User } = db;
+const { Review, Spot, User } = db;
 
 const router = express.Router();
 
@@ -14,7 +14,6 @@ const router = express.Router();
 router.get('/', asyncHandler(async (req, res) => {
     const allSpots = await Spot.findAll({
         include: [
-            Image,
             Review,
             User
         ]
@@ -27,7 +26,6 @@ router.get('/:id(\\d+)', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
     const spot = await Spot.findByPk(spotId, {
         include: [
-            Image,
             Review,
             User
         ]
@@ -60,7 +58,6 @@ router.get('/:id(\\d+)/edit', asyncHandler(async (req, res) => {
     const spotId = req.params.id;
     const spot = await Spot.findByPk(spotId, {
         include: [
-            Image,
             Review,
             User
         ]
