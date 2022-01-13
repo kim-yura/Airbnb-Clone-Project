@@ -17,6 +17,7 @@ import SpotEdit from "./components/SpotEditForm";
 
 import UserAuthentication from "./components/UserAuthentication";
 import DeleteConfirmed from "./components/SpotDeleteConfirmationModal/DeleteConfirmed";
+import CreateConfirmed from "./components/SpotCreateForm/CreateConfirmed";
 
 import './index.css';
 
@@ -43,6 +44,10 @@ function App() {
 
             <Route exact path="/spots-delete-confirmation">
               <DeleteConfirmed />
+            </Route>
+
+            <Route exact path="/spots-create-confirmation">
+              <CreateConfirmed />
             </Route>
 
             <Route path="/spots/new">

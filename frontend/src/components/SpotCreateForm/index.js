@@ -75,7 +75,7 @@ function SpotCreate() {
         if (!errors.length) {
             // TODO: ROUTE HANDLING TO PUSH NEWSPOT TO DB
             let res = await dispatch(createNewSpot(newSpot));
-            history.push(`/`);
+            history.push(`/spots-create-confirmation`);
         }
 
         // TODO: UPON SUCCESS, ROUTE USER TO THE NEW SPOT PAGE
