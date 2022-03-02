@@ -1,39 +1,30 @@
 .host-container {
-    box-sizing: border-box;
     position: relative;
-    top: 650px;
-    height: 200px;
+    height: 500;
     width: 100%;
-    margin-left: 3.3%;
-    padding-bottom: 650px;
+    padding-bottom: 40px;
 }
 
 .host-text {
-    box-sizing: border-box;
-    padding-right: 0px;
-    padding-left: 0px;
-    position: absolute;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    right: 0;
-    z-index: 10;
-    top: 440px;
-    left: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 32px;
     color: white;
-    text-shadow: 0px 0px 10px rgb(36, 36, 36);
+    text-shadow: 2px 2px 32px black;
+    position: absolute;
+    top: 440px;
+    left: 40px;
 }
 
 #splash-host {
-    background-image: url("../../../public/images/host_01.jpg");
-    background-size: cover;
-    height: 500px;
+    object-fit: cover;
+    box-sizing: border-box;
+    position: relative;
     width: 100%;
+    height: 500px;
     border-radius: 20px;
-    color: transparent;
+    align-self: center;
+    z-index: -1;
 }
 
 .splash-host-link {

@@ -3,7 +3,7 @@
     padding-right: 0px;
     padding-left: 0px;
     background: linear-gradient(0, white, rgb(241, 241, 241));
-    position: fixed;
+    position: relative;
     width: 100%;
     left: 0;
     bottom: 0;

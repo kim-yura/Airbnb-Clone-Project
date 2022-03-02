@@ -33,11 +33,12 @@ function App() {
   return (
     <>
       <Navigation isLoaded={isLoaded} />
-      <div className="site-background">
+      <div className="site-body">
         {isLoaded && (
           <Switch>
             <Route exact path="/">
-              <div className="site-body">
+              <div className="site-gradient" />
+              <div className="site-background">
                 <SplashImage />
                 <SpotDisplay />
                 <SplashHost />
@@ -76,8 +77,8 @@ function App() {
           </Switch>
         )}
 
-      <Footer />
       </div>
+      <Footer />
     </>
   );
 }
