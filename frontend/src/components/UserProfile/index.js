@@ -37,7 +37,7 @@ function UserProfile() {
                     <h2>{user?.username}'s Profile</h2>
                     <h3>{user?.username}'s Spots</h3>
                     <div className={user?.Spots.length > 4 ? 'overflow-grid' : 'flex-grid'}>
-                        {user?.Spots.length &&
+                        {user?.Spots.length ?
                             user?.Spots.map(spot => {
                                 if (spot) {
                                     return (
@@ -58,7 +58,11 @@ function UserProfile() {
                                         </li>
                                     )
                                 }
-                            })}
+                            })
+                            :
+                            <div className='no-spots'>
+                                <h4>{user?.username} has no Spots</h4>
+                            </div>}
                     </div>
                 </div>
             </div>
