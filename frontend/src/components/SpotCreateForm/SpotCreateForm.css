@@ -50,6 +50,16 @@ textarea {
     border: 1px solid lightgray;
 }
 
+#country {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
 .new-spot-form-inputs > input {
     border-radius: 2px;
     font-size: 14px;
