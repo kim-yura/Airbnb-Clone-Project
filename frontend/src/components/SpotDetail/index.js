@@ -14,7 +14,11 @@ function SpotDetail() {
     const history = useHistory();
     const { spotId } = useParams();
     const sessionUser = useSelector(state => state.session.user);
+
     const [showModal, setShowModal] = useState(false);
+    const [checkin, setCheckin] = useState('');
+    const [checkout, setCheckout] = useState('');
+    const [reasonForStay, setReasonForStay] = useState('');
 
     const spot = useSelector(state => {
         return state.spot
@@ -69,7 +73,8 @@ function SpotDetail() {
                                 <div className='booking-container'>
                                     <div className='booking-checkin-checkout'>
                                         <h4>CHECK-IN</h4>
-                                        <input type="date" min={new Date().toISOString().split('T')[0]}></input>
+                                        <input
+                                        type="date" min={new Date().toISOString().split('T')[0]}></input>
                                     </div>
                                     <div className='booking-checkin-checkout'>
                                         <h4>CHECK-OUT</h4>
@@ -77,6 +82,8 @@ function SpotDetail() {
                                     </div>
                                 </div>
                                 <div className='booking-button'>
+                                    <h4>Include a note to the host for the reason of your stay:</h4>
+                                    <textarea></textarea>
                                     <button>BOOK SPOT</button>
                                 </div>
                             </>

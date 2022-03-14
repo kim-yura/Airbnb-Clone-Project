@@ -136,9 +136,38 @@ h3 {
     margin-right: 8%;
     padding-top: 30px;
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .booking-button>button {
     margin-left: auto;
     margin-right: auto;
+    background-color: #FF5A5F;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    border-radius: 50px;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.booking-button>h4 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -4px;
+}
+
+.booking-button>textarea {
+    border: 1px solid #929292;
+    margin-bottom: 12px;
+    height: 100px;
+    overflow-y: scroll;
+    resize: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-top: -4px;
 }
