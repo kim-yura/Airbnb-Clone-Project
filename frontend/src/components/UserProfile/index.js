@@ -31,8 +31,7 @@ function UserProfile() {
     if (user) {
         return (
             <div className='site-body'>
-                <div className='site-gradient'>
-                </div>
+                <div className='site-gradient' />
                 <div className='user-page'>
                     <h2>{user?.username}'s Profile</h2>
                     <h3>{user?.username}'s Spots</h3>

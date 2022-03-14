@@ -41,6 +41,16 @@ h3 {
     color: #282828;
 }
 
+.detail-host {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+}
+
+.detail-host>a {
+    text-decoration: none;
+    color: #FF5A5F;
+}
+
 .detail-long-text {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
