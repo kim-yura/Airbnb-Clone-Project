@@ -14,10 +14,11 @@ import SplashHost from "./components/SplashHost";
 
 import SpotCreate from "./components/SpotCreateForm";
 import SpotEdit from "./components/SpotEditForm";
-
-import UserAuthentication from "./components/UserAuthentication";
 import DeleteConfirmed from "./components/SpotDeleteConfirmationModal/DeleteConfirmed";
 import CreateConfirmed from "./components/SpotCreateForm/CreateConfirmed";
+
+import UserAuthentication from "./components/UserAuthentication";
+import UserProfile from "./components/UserProfile";
 
 import PageNotFound from "./components/PageNotFound";
 
@@ -68,6 +69,10 @@ function App() {
 
             <Route path="/authentication">
               <UserAuthentication />
+            </Route>
+
+            <Route path="/users/:userId">
+              <UserProfile />
             </Route>
 
 
