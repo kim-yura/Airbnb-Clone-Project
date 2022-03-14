@@ -82,6 +82,11 @@ input {
     padding-bottom: 10px;
 }
 
+.list-link {
+    color: #282828;
+    text-decoration: none;
+}
+
 .list-link:hover {
     font-weight: bold;
 }

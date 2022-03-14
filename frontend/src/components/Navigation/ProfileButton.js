@@ -28,6 +28,8 @@ function ProfileButton({ user }) {
     dispatch(sessionActions.logout());
   };
 
+  console.log(user);
+
   return (
     <>
       <button onClick={openMenu}>
@@ -37,7 +39,7 @@ function ProfileButton({ user }) {
         <ul className="profile-dropdown">
           <div className="dropdown-content">
             <li className="greeting">Welcome, {user.username}!</li>
-            {/* <li className="list-link">User Profile</li> */}
+            <a href={`/users/${user.id}`} className="list-link">User Profile</a>
             <li>
               <button id="logout-button" onClick={logout}>Log Out</button>
             </li>
