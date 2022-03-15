@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 import sessionReducer from './session.js';
 import spotReducer from './spotReducer.js';
 import userReducer from './userReducer.js';
+import bookingReducer from './bookingReducer.js';
 
 let enhancer;
 
@@ -28,7 +29,8 @@ const configureStore = (preloadedState) => {
 const rootReducer = combineReducers({
     session: sessionReducer,
     spot: spotReducer,
-    users: userReducer
+    users: userReducer,
+    bookings: bookingReducer
 });
 
 // -------------------- EXPORTS -------------------- //
