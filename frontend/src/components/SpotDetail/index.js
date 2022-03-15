@@ -77,11 +77,11 @@ function SpotDetail() {
                                     <div className='booking-checkin-checkout'>
                                         <br />
                                         <h4>Currently Unavailable Dates:</h4>
-                                        {spotObj.Bookings ?
+                                        {spotObj.Bookings.length ?
                                             Object.values(spotObj.Bookings).map((booking, idx) => (
                                                 <li className='unavailable-dates'>{booking.startDate.split('T')[0].replaceAll('-', ' / ')} - {booking.endDate.split('T')[0].replaceAll('-', ' / ')}</li>
                                             ))
-                                            : <>This Spot has no bookings yet</>}
+                                            : <li className='unavailable-dates'>This Spot has no bookings yet</li>}
                                     </div>
                                 </>
                             }
