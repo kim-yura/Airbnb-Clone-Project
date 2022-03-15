@@ -35,6 +35,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE,
         defaultValue: Sequelize.fn('now')
+      },
+      reasonForStay: {
+        allowNull: false,
+        type: Sequelize.STRING
       }
     });
   },

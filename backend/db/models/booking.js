@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
     endDate: {
       allowNull: false,
       type: DataTypes.DATE
+    },
+    reasonForStay: {
+      allowNull: false,
+      type: DataTypes.STRING(1000)
     }
   }, {});
   Booking.associate = function(models) {
