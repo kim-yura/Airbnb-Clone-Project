@@ -1,8 +1,10 @@
-.detail-container {
-    margin-left: 8%;
-    margin-right: 8%;
+.detail-body {
+    margin-left: 12%;
+    margin-right: 12%;
     padding-top: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    column-gap: 72px;
 }
 
 .detail-image {
@@ -10,10 +12,6 @@
     width: 400px;
     object-fit: cover;
     border-radius: 20px;
-}
-
-.detail-text {
-    margin-left: 50px;
 }
 
 .detail-map > a{
@@ -54,7 +52,7 @@ h3 {
 .detail-long-text {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
-    margin-right: 15%;
+    /* margin-right: 15%; */
 }
 
 .detail-reviews {
@@ -103,8 +101,8 @@ h3 {
 
 .booking-container {
     width: 400px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -132,8 +130,8 @@ h3 {
 
 .booking-button {
     width: 400px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 30px;
     display: flex;
     flex-direction: column;

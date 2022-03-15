@@ -35,23 +35,10 @@ function SpotDetail() {
             <>
                 <div className="site-body">
                     <div className='site-gradient' />
-                    <div className="site-background">
-                        <div className="detail-container">
+                    <div className="detail-body">
+                        <div className='detail-left'>
                             <img className="detail-image" src={spotObj.imageUrl} alt="Depiction of spare room available" />
-                            <div className="detail-text">
-                                <h1>{spotObj.name}</h1>
-                                <h3 className="detail-map"><a href={`https://www.google.com/maps/place/${spotObj.city}+${spotObj.state}+${spotObj.country}`} target="_blank">
-                                    {spotObj.city}, {spotObj.state}, {spotObj.country}
-                                </a></h3>
-                                <h4 className="detail-price"><b>${spotObj.price}</b> / Night</h4>
-                                <h4 className='detail-host'>Hosted by <a href={`/users/${spotObj.User.id}`}>{spotObj.User.username}</a></h4>
-                                <p className="detail-long-text">
-                                    {spotObj.description}
-                                </p>
-                            </div>
-                        </div>
-
-                        {sessionUser?.id === spotObj.User.id ?
+                            {sessionUser?.id === spotObj.User.id ?
                             <div className="edit-delete-buttons">
                                 <Link to={`/spots/${spotObj.id}/edit`}>
                                     Edit
@@ -73,12 +60,13 @@ function SpotDetail() {
                                 <div className='booking-container'>
                                     <div className='booking-checkin-checkout'>
                                         <h4>CHECK-IN</h4>
-                                        <input
-                                        type="date" min={new Date().toISOString().split('T')[0]}></input>
+                                        <input type="date"
+                                            min={new Date().toISOString().split('T')[0]}></input>
                                     </div>
                                     <div className='booking-checkin-checkout'>
                                         <h4>CHECK-OUT</h4>
-                                        <input type="date" min={new Date().toISOString().split('T')[0]}></input>
+                                        <input type="date"
+                                            min={new Date().toISOString().split('T')[0]}></input>
                                     </div>
                                 </div>
                                 <div className='booking-button'>
@@ -88,6 +76,24 @@ function SpotDetail() {
                                 </div>
                             </>
                         }
+                        </div>
+                        <div className='detail-right'>
+                            <div className="detail-text">
+                                <h1>{spotObj.name}</h1>
+                                <h3 className="detail-map"><a href={`https://www.google.com/maps/place/${spotObj.city}+${spotObj.state}+${spotObj.country}`} target="_blank">
+                                    {spotObj.city}, {spotObj.state}, {spotObj.country}
+                                </a></h3>
+                                <h4 className="detail-price"><b>${spotObj.price}</b> / Night</h4>
+                                <h4 className='detail-host'>Hosted by <a href={`/users/${spotObj.User.id}`}>{spotObj.User.username}</a></h4>
+                                <p className="detail-long-text">
+                                    {spotObj.description}
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
 
                         <h2 className="reviews-header">Reviews</h2>
                         <div className="detail-reviews">
