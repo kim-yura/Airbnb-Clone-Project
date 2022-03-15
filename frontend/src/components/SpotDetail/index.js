@@ -39,43 +39,52 @@ function SpotDetail() {
                         <div className='detail-left'>
                             <img className="detail-image" src={spotObj.imageUrl} alt="Depiction of spare room available" />
                             {sessionUser?.id === spotObj.User.id ?
-                            <div className="edit-delete-buttons">
-                                <Link to={`/spots/${spotObj.id}/edit`}>
-                                    Edit
-                                </Link>
-                                <a
-                                    onClick={(e) => {
-                                        setShowModal(true)
-                                    }}>
-                                    Delete
-                                </a>
-                                {showModal && (
-                                    <Modal onClose={() => setShowModal(false)}>
-                                        <ConfirmDelete />
-                                    </Modal>
-                                )}
-                            </div>
-                            :
-                            <>
-                                <div className='booking-container'>
-                                    <div className='booking-checkin-checkout'>
-                                        <h4>CHECK-IN</h4>
-                                        <input type="date"
-                                            min={new Date().toISOString().split('T')[0]}></input>
+                                <div className="edit-delete-buttons">
+                                    <Link to={`/spots/${spotObj.id}/edit`}>
+                                        Edit
+                                    </Link>
+                                    <a
+                                        onClick={(e) => {
+                                            setShowModal(true)
+                                        }}>
+                                        Delete
+                                    </a>
+                                    {showModal && (
+                                        <Modal onClose={() => setShowModal(false)}>
+                                            <ConfirmDelete />
+                                        </Modal>
+                                    )}
+                                </div>
+                                :
+                                <>
+                                    <div className='booking-container'>
+                                        <div className='booking-checkin-checkout'>
+                                            <h4>CHECK-IN</h4>
+                                            <input type="date"
+                                                min={new Date().toISOString().split('T')[0]}></input>
+                                        </div>
+                                        <div className='booking-checkin-checkout'>
+                                            <h4>CHECK-OUT</h4>
+                                            <input type="date"
+                                                min={new Date().toISOString().split('T')[0]}></input>
+                                        </div>
+                                    </div>
+                                    <div className='booking-button'>
+                                        <h4>Include a note to the host for the reason of your stay:</h4>
+                                        <textarea></textarea>
+                                        <button>BOOK SPOT</button>
                                     </div>
                                     <div className='booking-checkin-checkout'>
-                                        <h4>CHECK-OUT</h4>
-                                        <input type="date"
-                                            min={new Date().toISOString().split('T')[0]}></input>
+                                        <br />
+                                        <h4>Currently Unavailable Dates:</h4>
+                                        {spotObj.Bookings ?
+                                            Object.values(spotObj.Bookings).map((booking, idx) => (
+                                                <li className='unavailable-dates'>{booking.startDate.split('T')[0].replaceAll('-', ' / ')} - {booking.endDate.split('T')[0].replaceAll('-', ' / ')}</li>
+                                            ))
+                                            : <>This Spot has no bookings yet</>}
                                     </div>
-                                </div>
-                                <div className='booking-button'>
-                                    <h4>Include a note to the host for the reason of your stay:</h4>
-                                    <textarea></textarea>
-                                    <button>BOOK SPOT</button>
-                                </div>
-                            </>
-                        }
+                                </>
+                            }
                         </div>
                         <div className='detail-right'>
                             <div className="detail-text">

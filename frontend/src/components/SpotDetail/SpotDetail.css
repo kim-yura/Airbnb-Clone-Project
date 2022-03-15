@@ -169,3 +169,8 @@ h3 {
     border-bottom-left-radius: 6px;
     margin-top: -4px;
 }
+
+.unavailable-dates {
+    list-style: none;
+    font-size: 14px;
+}

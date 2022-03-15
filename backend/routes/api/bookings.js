@@ -9,9 +9,3 @@ const { response } = require('express');
 const { Booking, Spot, User } = db;
 
 const router = express.Router();
-
-
-router.get('/:id(\\d+)', asyncHandler(async (req, res) => {
-    const spotId = req.params.id;
-    const spotBookings = await Booking.findBy
-}))

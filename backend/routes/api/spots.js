@@ -14,6 +14,7 @@ const router = express.Router();
 router.get('/', asyncHandler(async (req, res) => {
     const allSpots = await Spot.findAll({
         include: [
+            Booking,
             Review,
             User
         ]
